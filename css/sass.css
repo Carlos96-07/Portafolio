@@ -1,12 +1,15 @@
 .tituloL {
+  margin-top: 15rem;
   background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   font-size: 10rem;
   font-family: "Source Sans Pro", sans-serif;
-  -webkit-animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
-          animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+  -webkit-animation: reveal 3000ms ease-in-out forwards 200ms,
+ glow 2500ms linear infinite 2000ms;
+          animation: reveal 3000ms ease-in-out forwards 200ms,
+ glow 2500ms linear infinite 2000ms;
 }
 
 @-webkit-keyframes reveal {
