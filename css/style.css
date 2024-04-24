@@ -120,7 +120,7 @@ section {
   z-index: 1100;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.3);
   display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -306,7 +306,7 @@ section {
 .about .icons-container .icons h3 {
   font-size: 1.5rem;
   text-transform: capitalize;
-  color: #222;
+  color: #c7c7c7;
 }
 
 .menu {
@@ -481,13 +481,13 @@ section {
   -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .contact .contact-info-container .box {
-  border: 0.1rem solid #512a10;
+  border: 0.1rem solid #d6d6d6;
   padding: 3rem 2rem;
-  border: 0.1rem solid #512a10;
+  border: 0.1rem solid #b6b6b6;
   text-align: center;
 }
 
@@ -500,7 +500,7 @@ section {
   height: 6rem;
   width: 6rem;
   line-height: 6rem;
-  border: 0.1rem solid #512a10;
+  border: 0.1rem solid #b1b1b1;
   color: #512a10;
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -730,11 +730,38 @@ section {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 20rem;
+  font-size: 10rem;
   font-family: "Source Sans Pro", sans-serif;
-  -webkit-animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
-          animation: reveal 3000ms ease-in-out forwards 200ms, glow 2500ms linear infinite 2000ms;
+  -webkit-animation: reveal 3000ms ease-in-out forwards 200ms,
+ glow 2500ms linear infinite 2000ms;
+  animation: reveal 3000ms ease-in-out forwards 200ms,
+ glow 2500ms linear infinite 2000ms;
 }
+
+@media only screen and (max-width: 414px) {
+  .tituloL {
+    font-size: 1rem; /* Ajuste para dispositivos de pantalla pequeña como smartphones en posición vertical */
+  }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+  .tituloL {
+    font-size: 8rem; /* Ajuste para dispositivos de pantalla más grandes, pero aún móviles como smartphones en posición horizontal */
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .tituloL {
+    font-size: 14rem; /* Ajuste para tabletas y pantallas más pequeñas de escritorio */
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .tituloL {
+    font-size: 18rem; /* Tamaño de fuente predeterminado para pantallas más grandes de escritorio */
+  }
+}
+
 
 @-webkit-keyframes reveal {
   80% {
