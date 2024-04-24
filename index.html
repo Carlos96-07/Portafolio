@@ -10,6 +10,18 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
      <link rel="stylesheet" href="./css/styles.css">
      <link rel="stylesheet" href="./css/sass.css">
+       <!-- Particles.js CDN -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+      #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+    </style>
   </head>
   <body>
 
@@ -25,8 +37,6 @@
               <ul class="pt-5">
                 <li><a href="#home">Inicio</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="./CarlosLeandroWeb.pdf" download="CarlosLeandroWeb.pdf" style="font-size: 3rem;">Descargar CV</a></li>
-
               </ul>
             </nav>
         </div>
@@ -61,16 +71,11 @@
           <img src="images/foto.png" alt="">
       </div>
 
-      <div class="content">
+      <div class="content" >
           <h3>¡Hola!</h3>
           <p>
-            Me llamo Carlos Leandro. Soy Desarrollador Web.
-            Disfruto realizar trabajos tanto en la tecnología de Front-End como en la de Back-End.
-            Siempre estoy en constante apredizaje y me mantengo actualizado en el área de la informática. <br>
-            Mis lenguajes favoritos son C#, Python y JavaScript por mencionar algunos. Suelo priorizar las tareas para tener un mejor rendimiento e ir mejorando cada vez más!
-          </p>
-          
-          <a href="./CarlosChavesWeb.pdf" download="CarlosChavesWeb.pdf" class="btn">Descargar CV</a>
+          Mi nombre es Carlos Leandro, graduado como Desarrollador Web y estudiante de Ingeniería de Software. <br> Disfruto explorar tanto el Front-End como el Back-End, aprovechando mis habilidades técnicas y mi creatividad para ofrecer soluciones innovadoras. Mantenerme actualizado en el ámbito de la informática es fundamental para mí, por lo que siempre estoy explorando nuevas tecnologías y tendencias. Entre mis lenguajes favoritos se encuentran C#, Python y JavaScript, y tengo un sólido dominio en tecnologías como .NET. Además, mi enfoque en la priorización de tareas me permite mantener un alto rendimiento y seguir mejorando para adquirir un constante aprendizaje en mi campo.
+          </p>          
       </div>
 
   </div>
@@ -88,7 +93,7 @@
           <img src="images/iconos/front.svg" alt="">
           <h3>Front-End</h3>
           <div class="price">
-             - HTML5 <br> - CSS <br> - JavaScript <br> - JSON <br> - jQuery <br> - BootStrap <br> - Bulma <br> - WordPress <br> - Figma
+             - HTML5 <br> - CSS <br> - JavaScript <br> - React JS <br> - jQuery <br> - BootStrap <br> - Bulma <br> - WordPress <br> - Figma
           </div>
       </div>
 
@@ -96,7 +101,7 @@
           <img src="images/iconos/back.svg" alt="">
           <h3>Back-End</h3>
           <div class="price">
-              - Python <br> - C++ <br> - C# <br> - Node.js <br> - APIs <br> - XAMPP <br> - SQL Server <br> - MySQL 
+              - Python <br> - C++ <br> - C# <br> - .NET CORE <br> - GIT <br> - Postman API <br> - PHP Laravel <br> - SQL Server <br> - MySQL 
           </div>
       </div>
 
@@ -106,12 +111,12 @@
           <div class="price">
               - Introduction to Cybersecurity<br>
               - Cybersecurity Essentials<br>
-              - Internet of Things<br>
-              - Linux Unhatched<br>
+              - Ethical Hacking<br>
+              - CCNA1 CCNA2<br>
               - Linux Essentials<br>
               - C++ Certificate Essentials<br>
               - Scrum Fundamentals <br>
-              - Microsoft Automatización de IA
+              - Microsoft Automatización IA
           </div>
       </div>
     
@@ -200,45 +205,42 @@
 <!-- contact section starts  -->
 
 <section class="contact" id="contact">
-
-
   <div class="container">
-  <div class="row">
-      <div class="col-3"></div>
-      <div class="col-6" style="text-align: center;">
-          <h1 class="heading"> <span>Contacto</span>  </h1>
-          <h1>Ingresa tus Datos</h1>
+      <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6" style="text-align: center;">
+              <h1 class="heading"> <span>Contacto</span>  </h1>
+              <h1 style="font-size: 3rem;">Ingresa tus Datos</h1>
+              <form id="contactForm" action="https://formsubmit.co/leandro_9607@hotmail.com" method="POST">
+                  <div class="inputBox" style="border: 0.1rem solid #dddddd;">
+                      <span class="fas fa-user"></span>
+                      <input required type="text" name="Nombre" id="nombre" placeholder="Nombre" >
+                  </div>
+                  <div class="inputBox" style="border: 0.1rem solid #dddddd;">
+                      <span class="fas fa-envelope"></span>
+                      <input required type="email" name="Email" id="email" placeholder="Email">
+                  </div>
 
-          <form action="https://formsubmit.co/leandro_9607@hotmail.com" method="POST">
-            <div class="inputBox">
-                <span class="fas fa-user"></span>
-                <input type="text" name="Nombre" placeholder="Nombre">
-            </div>
-            <div class="inputBox">
-                <span class="fas fa-envelope"></span>
-                <input type="email" name="Email" placeholder="Email">
-            </div>
-
-            <div class="inputBox">
-              <span class=""></span>
-              <textarea name="Mensaje" placeholder="Mensaje" cols="20" rows="10"></textarea>
+                  <div class="inputBox" style="border: 0.1rem solid #dddddd;">
+                      <textarea required name="Mensaje" id="mensaje" placeholder="¡Escribe un mensaje!" cols="20" rows="10"></textarea>
+                  </div>
+                  <input type="hidden" name="_captcha" value="false">
+                  <button type="button" class="btn" onclick="validateForm()">Enviar mensaje</button>
+              </form>
           </div>
-          <input type="hidden" name="_captcha" value="false">
-          <button type="submit" class="btn" onclick="mialerta()">Enviar mensaje</button>
-          <input type="hidden" name="_next" value="https://www.google.com/?hl=es">
-
-        </form>
+          <div class="col-sm-3"></div>
       </div>
-      <div class="col-4"></div>
   </div>
-  </div>
-  </section>
+</section>
+
   
   <!-- contact section ends -->
 
+  <div id="particles-js"></div>
+
   
 <!-- footer section starts  -->
-
+<hr style="color: rgb(28, 218, 28, 0.9);">
 <section class="footer">
 
   <div class="share">
@@ -248,40 +250,163 @@
   </div>
 
   <div class="links">
-      <a href="#home">Inicio</a>
-      <a href="#about">Sobre mí</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contact">Contacto</a>
+      <a style="text-decoration: none;" href="#home">Inicio</a>
+      <a style="text-decoration: none;" href="#about">Sobre mí</a>
+      <a style="text-decoration: none;" href="#proyectos">Proyectos</a>
+      <a style="text-decoration: none;" href="#contact">Contacto</a>
   </div>
 
 </section>
 
 <!-- footer section ends -->
 
-
-<!-- about section ends -->
 <!-- Sweet alert link -->
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
-      function mialerta() {  
-        Swal.fire({
-        title: '¡Tu información ha sido enviada correctamente!',
-        text: 'Me pondré en contacto contigo pronto...',
-        width: '50%',
-        backdrop: true,
-        allowOutsideClick: false,
-        allowEscapeKey: false,
-        allowEnterKey: true,
-        stopKeydownPropagation: true,
-        showConfirmButton: true,
-        confirmButtonColor: '#60CA48',
-        confirmButtonText: 'Continuar...',
-        closeButtonArialLabel: 'Cerrar Alerta...',
-        icon: 'success',
-        });
-    } 
+  function validateForm() {
+      var nombre = document.getElementById("nombre").value;
+      var email = document.getElementById("email").value;
+      var mensaje = document.getElementById("mensaje").value;
+
+      if (nombre == "" || email == "" || mensaje == "") {
+          Swal.fire({
+              title: 'Error',
+              text: 'Todos los campos son obligatorios',
+              icon: 'error',
+              confirmButtonText: 'Aceptar'
+          });
+          return false;
+      }
+      else {
+          Swal.fire({
+              title: '¡Tu información ha sido enviada correctamente!',
+              text: 'Me pondré en contacto contigo pronto...',
+              width: '50%',
+              backdrop: true,
+              allowOutsideClick: false,
+              allowEscapeKey: false,
+              allowEnterKey: true,
+              stopKeydownPropagation: true,
+              showConfirmButton: true,
+              confirmButtonColor: '#60CA48',
+              confirmButtonText: 'Continuar...',
+              closeButtonArialLabel: 'Cerrar Alerta...',
+              icon: 'success',
+          });
+          return true;
+      }
+  }
 </script>
+
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 80,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#ffffff"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 3,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 4,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200,
+          "duration": 0.4
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>
