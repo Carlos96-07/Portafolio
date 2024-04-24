@@ -1,124 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Carlos Leandro | Web Developer</title>
-     <!-- font awesome cdn link  -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-     <link rel="stylesheet" href="./css/bootstrap.min.css">
-	 <link rel="stylesheet" href="./css/styles.css">
-     <link rel="stylesheet" href="./css/sass.css">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./images/iconos/iconP.ico"/>
+  <title>Carlos Leandro | Web Developer</title>
+  <!-- Font Awesome CDN link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/sass.css">
+  <!-- Particles.js CDN -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <style>
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
 
-    <div class="container-fluid" id="header">
-      <div class="row">
-        <div class="col-sm-6">
-          <a href="index.html" class="logo" target="_blank">
-            <img src="images/LOGO5.png" alt="">
-          </a>
-            <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
-            <label for="menu-icon"></label>
-            <nav class="nav"> 		
-              <ul class="pt-5">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="./CarlosChavesWeb.pdf" download="CarlosChavesWeb.pdf" style="font-size: 3rem;">Descargar CV</a></li>
-
-              </ul>
-            </nav>
-        </div>
-      </div>
+<!-- Header Section -->
+<div class="container-fluid" id="header">
+  <div class="row">
+    <div class="col-sm-6">
+      <a href="index.html" class="logo" target="_blank">
+        <img src="images/LOGO5.png" alt="">
+      </a>
+      <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+      <label for="menu-icon"></label>
+      <nav class="nav"> 		
+        <ul class="pt-5">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
+  </div>
+</div>
 
-
-
-    <!-- home section starts  -->
-
+<!-- Home Section -->
 <section class="home" id="home">
-
   <div class="content">
     <div class="tituloL">
       Contáctame
     </div>
   </div>
-
 </section>
 
-<!-- home section ends -->
-
-
-<!-- contact section starts  -->
-
+<!-- Contact Section -->
 <section class="contact" id="contact">
-
-
+  <div id="particles-js"></div> <!-- Particles Container -->
   <div class="container">
-  <div class="row">
-      <div class="col-6" id="ContactInfo">          
-        <a href="#"><i class="far fa-map"></i> Cartago, Costa Rica</a><br>
-        <a href="tel:87655900"><i class="fas fa-phone-volume"></i> Teléfono: 8765-5900</a><br>
-        <a href="mailto:leandro_9607@hotmail.com" target="blank"><i class="fas fa-at"></i>Email: leandro_9607@hotmail.com</a><br>
-        <a href="https://wa.link/m5vl9t" target="blank" ><i class="fab fa-whatsapp"></i>WhatsApp</a>
-
+    <div class="row">
+      <div class="col-sm-6" id="ContactInfo">          
+        <a href="#"><i class="fas fa-map-pin"></i> Cartago, Costa Rica</a><br>
+        <a href="tel:87655900"><i class="fas fa-phone-volume"></i> Teléfono: 86190276</a><br>
+        <a href="mailto:leandro_9607@hotmail.com" target="_blank"><i class="fas fa-at"></i>Email: leandro_9607@hotmail.com</a><br>      
       </div>
-      <div class="col-6" style="text-align: center;">
-          <h1>Ingresa tus Datos</h1>
-
-          <form action="https://formsubmit.co/leandro_9607@hotmail.com" method="POST">
-              <div class="inputBox">
-                  <span class="fas fa-user"></span>
-                  <input type="text" name="Nombre" placeholder="Nombre">
-              </div>
-              <div class="inputBox">
-                  <span class="fas fa-envelope"></span>
-                  <input type="email" name="Email" placeholder="Email">
-              </div>
-
-              <div class="inputBox">
-                <span class=""></span>
-                <textarea name="Mensaje" placeholder="Mensaje" cols="20" rows="10"></textarea>
-            </div>
-            <input type="hidden" name="_captcha" value="false">
-            <button type="submit" class="btn" onclick="mialerta()">Enviar mensaje</button>
-            <input type="hidden" name="_next" value="https://www.google.com/?hl=es">
-
-          </form>
+      <br>
+      <hr style="color: rgb(28, 218, 28, 0.9);">
+      <div class="col-sm-12" style="text-align: center; margin: 1.5rem;">
+        <h1 style="font-size: 3rem;">Ingresa tus Datos</h1>
+        <form action="https://formsubmit.co/leandro_9607@hotmail.com" method="POST">
+          <div class="inputBox" style="border: 0.1rem solid #dddddd;">
+            <span class="fas fa-user"></span>
+            <input required type="text" name="Nombre" placeholder="Nombre">
+          </div>
+          <div class="inputBox" style="border: 0.1rem solid #dddddd;">
+            <span class="fas fa-envelope"></span>
+            <input required type="email" name="Email" placeholder="Email">
+          </div>
+          <div class="inputBox" style="border: 0.1rem solid #dddddd;">
+           
+            <textarea required name="Mensaje" placeholder="¡Escribe un mensaje!" cols="20" rows="10"></textarea>
+          </div>
+          <input type="hidden" name="_captcha" value="false">
+          <button type="submit" class="btn" onclick="mialerta()">Enviar mensaje</button>
+        </form>
       </div>
+    </div>
   </div>
-  </div>
-  </section>
-  
-  <!-- contact section ends -->
+</section>
 
-  
-<!-- footer section starts  -->
-
+<!-- Footer Section -->
+<hr style="color: rgb(28, 218, 28, 0.9);">
 <section class="footer">
-
   <div class="share">
-      <a href="https://github.com/Carlos96-07" class="fab fa-github"></a>
-      <a href="https://cr.linkedin.com/in/carlos-leandro-50aba8217" class="fab fa-linkedin"></a>
-      <a href="mailto:leandro_9607@hotmail.com" class="fas fa-envelope"></a>
+    <a href="https://github.com/Carlos96-07" class="fab fa-github"></a>
+    <a href="https://cr.linkedin.com/in/carlos-leandro-50aba8217" class="fab fa-linkedin"></a>
+    <a href="mailto:leandro_9607@hotmail.com" class="fas fa-envelope"></a>
   </div>
-
   <div class="links">
-      <a href="index.html">Inicio</a>
-  </div>
+    <a href="index.html" style="text-decoration: none;"><i class="fas fa-home"></i> &nbsp; Página Principal</a>
+</div>
 
 </section>
 
-<!-- footer section ends -->
-
-
-<!-- about section ends -->
-<!-- Sweet alert link -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <script>
-    function mialerta() {  
+<!-- Sweet Alert -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  function mialerta() {  
     Swal.fire({
       title: '¡Tu información ha sido enviada correctamente!',
       text: 'Nuestro personal se pondrá en contacto contigo pronto...',
@@ -135,9 +125,118 @@
       icon: 'success',
       timer: 5000
     });
-    } 
-    </script>
+  } 
+</script>
 
-    <script src="./js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  </body>
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 80,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#ffffff"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 3,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200,
+          "duration": 0.4
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
+<!-- Bootstrap JS -->
+<script src="./js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
 </html>
