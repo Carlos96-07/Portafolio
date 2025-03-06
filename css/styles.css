@@ -625,7 +625,7 @@ section{
     }
 
     .menu .box-container .box:hover {
-      background: #504f4f; 
+      background: #bab9b9; 
   }
 
   .menu .box-container .box:hover > * {
@@ -650,6 +650,11 @@ section{
 
     .BSection .col-2 {
         display: none;
+    }
+
+    #cardcontentP {
+      border-radius: 20px;
+      overflow: hidden; /* Importante para imágenes u otros elementos dentro */
     }
 
   }
@@ -738,6 +743,11 @@ section{
         padding: 1rem;
         background-color: #222;
         border-radius: 15px;
+    }
+
+    #cardcontentP {
+      border-radius: 20px;
+      overflow: hidden; /* Para que el contenido respete el borde redondeado */
     }
   }
 
