@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="./css/sass.css">
   <!-- Particles.js CDN -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- CSS de AOS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   <style>
     #particles-js {
       position: fixed;
@@ -59,16 +62,17 @@
 <!-- Contact Section -->
 <section class="contact" id="contact">
   <div id="particles-js"></div> <!-- Particles Container -->
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-6" id="ContactInfo">          
-        <a href="#"><i class="fas fa-map-pin"></i> Cartago, Costa Rica</a><br>
+      <div class="col-sm-6" id="ContactInfo">   
+        <h2 style="font-size: 3rem; color: #fff !important; margin: 1.5rem;">Información Adicional</h2>       
+        <a href="#"><i class="fas fa-map-pin"></i>Costa Rica, Cartago</a><br>
         <a href="tel:87655900"><i class="fas fa-phone-volume"></i> Teléfono: 86190276</a><br>
         <a href="mailto:leandro_9607@hotmail.com" target="_blank"><i class="fas fa-at"></i>Email: leandro_9607@hotmail.com</a><br>      
       </div>
       <br>
       <hr style="color: rgb(28, 218, 28, 0.9);">
-      <div class="col-sm-12" style="text-align: center; margin: 1.5rem;">
+      <div class="col-sm-12" style="text-align: center; margin-top: 8rem;">
         <h1 style="font-size: 3rem;">¡Ingresa tus Datos!</h1>
         <form action="https://formsubmit.co/leandro_9607@hotmail.com" method="POST">
           <div class="inputBox" style="border: 0.1rem solid #dddddd;">
@@ -84,12 +88,13 @@
             <textarea required name="Mensaje" placeholder="¡Escribe un mensaje!" cols="20" rows="10"></textarea>
           </div>
           <input type="hidden" name="_captcha" value="false">
-          <button type="submit" class="btn" onclick="mialerta()">Enviar mensaje</button>
+          <button data-aos="zoom-out" type="submit" class="btn" onclick="mialerta()">Enviar mensaje</button>
         </form>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- Footer Section -->
 <hr style="color: rgb(28, 218, 28, 0.9);">
@@ -104,6 +109,12 @@
 </div>
 
 </section>
+
+<!-- JS de AOS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 <!-- Sweet Alert -->
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
