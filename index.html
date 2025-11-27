@@ -332,6 +332,11 @@
 
   <hr class="hr">
 
+  <!-- Botón scroll para arriba-->
+  <button id="scrollToTop" title="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
   <!-- Footer -->
   <footer>
     <div class="social-links">
@@ -418,6 +423,27 @@
       "retina_detect": true
     });
   </script>
+
+  <script>
+    // Scroll 
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        scrollToTopBtn.classList.add('show');
+      } else {
+        scrollToTopBtn.classList.remove('show');
+      }
+    });
+
+    scrollToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
 </body>
 
 </html>
