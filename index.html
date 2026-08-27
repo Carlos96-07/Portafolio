@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO Primary Meta Tags -->
+  <title>Full Stack Developer &amp; AI Integration</title>
+  <meta name="title" content="Full Stack Developer & AI Integration">
+  <meta name="description"
+    content="Portafolio profesional de Carlos Leandro, Full Stack Developer especializado en desarrollo web, arquitecturas backend sólidas (.NET, Python, Node.js) e integración de Inteligencia Artificial.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Carlos Leandro">
+
+  <!-- Security Policy Meta Tag (Strict CSP) -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com https://cdn.jsdelivr.net; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:;">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/Logo.webp">
+
+  <!-- Google Fonts Preconnect & Minimalist Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+  <!-- Main Script -->
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ==================== HEADER & NAV (MENÚ AL CENTRO Y MINIMALISTA) ==================== -->
+  <header class="header" id="header">
+    <div class="header__container container header__container--centered">
+      <button class="header__toggle" id="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span class="header__toggle-line"></span>
+        <span class="header__toggle-line"></span>
+        <span class="header__toggle-line"></span>
+      </button>
+
+      <nav class="nav" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#inicio" class="nav__link active">Inicio</a></li>
+          <li class="nav__item"><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
+          <li class="nav__item"><a href="#proyectos" class="nav__link">Proyectos</a></li>
+          <li class="nav__item"><a href="#certificaciones" class="nav__link">Certificaciones</a></li>
+          <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- ==================== HERO (FOTO COMO FONDO CON GRADIENTE) ==================== -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg-wrapper">
+        <img src="assets/images/hero-profile.webp" alt="Fotografía de Carlos Leandro" class="hero__bg-img" width="1024"
+          height="681" priority>
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__container container">
+        <div class="hero__content">
+          <span class="section-subtitle section-subtitle--dark" style="color: #fff;">Desarrollador Web &amp; IA</span>
+          <p class="hero__description">
+            Desarrollo de software completos combinando interfaces modernas con arquitecturas backend sólidas, escalables
+            e integración de Agentes de IA.
+          </p>
+          <div class="hero__actions">
+            <a href="#proyectos" class="btn btn--outline">Ver mis proyectos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SOBRE MÍ (TEXTO EXACTO Y LAPTOP MÁS PEQUEÑA) ==================== -->
+    <section class="about section" id="sobre-mi">
+      <div class="about__container container">
+        <div class="about__content">
+          <span class="section-subtitle">SOBRE MÍ</span>
+          <p class="about__text">
+            Mi nombres es Carlos Leandro. Soy Desarrollador Web Agéntico IA enfocado en el desarrollo de soluciones completas, combinando
+            interfaces modernas con arquitecturas backend sólidas y escalables.
+          </p>
+          <p class="about__text">
+            He trabajado de la mano con herramientas modernas para el desarrollo de software, aplicando herramientas de
+            Agentes de IA y arquitecturas modernas.
+          </p>
+        </div>
+
+        <div class="about__floating-image">
+          <img src="assets/images/about-workspace-float.webp" alt="Laptop flotante con desarrollo de código"
+            class="about__img-float" width="380" height="260" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- ==================== PROYECTOS (ACTUALIZADOS SEGÚN PORTAFOLIO ORIGINAL) ==================== -->
+    <section class="projects section" id="proyectos">
+      <div class="projects__container container">
+        <div class="projects__header">
+          <div class="projects__title-group">
+            <span class="section-subtitle">PROYECTOS DESTACADOS</span>
+          </div>
+          <a href="https://github.com/Carlos96-07" target="_blank" rel="noopener noreferrer"
+            class="projects__github-link">
+            <span>Ver más en GitHub</span>
+            <img src="assets/icons/github.svg" alt="GitHub" width="18" height="18" class="projects__github-icon">
+          </a>
+        </div>
+
+        <!-- Filtros de Proyectos -->
+        <div class="projects__filters" role="tablist" aria-label="Categorías de proyectos">
+          <button class="projects__filter-btn active" data-filter="frontend" role="tab" aria-selected="true"
+            id="tab-frontend" aria-controls="panel-frontend">
+            Frontend
+          </button>
+          <button class="projects__filter-btn" data-filter="ia" role="tab" aria-selected="false" id="tab-ia"
+            aria-controls="panel-ia">
+            Inteligencia Artificial
+          </button>
+          <button class="projects__filter-btn" data-filter="backend" role="tab" aria-selected="false" id="tab-backend"
+            aria-controls="panel-backend">
+            Backend
+          </button>
+        </div>
+
+        <!-- Galería de Proyectos -->
+        <div class="projects__content">
+
+          <!-- Categoría 1: Frontend -->
+          <div class="projects__panel active" id="panel-frontend" data-category="frontend" role="tabpanel"
+            aria-labelledby="tab-frontend">
+            <div class="projects__grid projects__grid--3col">
+
+              <article class="project-card project-card--mockup">
+                <div class="project-card__image-box">
+                  <img src="assets/images/project-frontend-1.webp" alt="Mockup de Diseño Web Apple Concept"
+                    class="project-card__img" width="900" height="560" loading="lazy">
+                </div>
+                <div class="project-card__body">
+                  <span class="project-card__category">SINGLE PAGE APP</span>
+                  <h3 class="project-card__title">Diseño Web Apple Concept</h3>
+                  <p class="project-card__description">
+                    Web Single Page de carga ultra rápida e interfaz estilizada glassmorphism construida con Vue.js y
+                    CSS3 moderno.
+                  </p>
+                  <div class="project-card__techs">
+                    <span class="tech-tag"><img src="assets/icons/vuejs.svg" alt="Vue.js" width="16" height="16">
+                      Vue.js</span>
+                    <span class="tech-tag"><img src="assets/icons/javascript.svg" alt="JS" width="16" height="16">
+                      JavaScript</span>
+                    <span class="tech-tag"><img src="assets/images/css-logo.webp" alt="CSS3" width="16" height="16">
+                      CSS3</span>
+                  </div>
+                  <div class="project-card__actions">
+                    <a href="https://6a8f51d9e28881968009de8b--deft-rugelach-a99d44.netlify.app/" target="_blank"
+                      rel="noopener noreferrer" class="btn-card-link">Ver Página Web</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card project-card--mockup">
+                <div class="project-card__image-box">
+                  <img src="assets/images/project-frontend-2.webp" alt="Mockup de Aplicación Angular"
+                    class="project-card__img" width="900" height="560" loading="lazy">
+                </div>
+                <div class="project-card__body">
+                  <span class="project-card__category">WEB APP</span>
+                  <h3 class="project-card__title">Aplicación Angular</h3>
+                  <p class="project-card__description">
+                    Consumo de APIs REST con estructura modular limpia y manejo interactivo de datos desde SQL Server.
+                  </p>
+                  <div class="project-card__techs">
+                    <span class="tech-tag"><img src="assets/images/Angular.jfif" alt="Angular" width="16" height="16">
+                      Angular</span>
+                    <span class="tech-tag"><img src="assets/images/sql server.jfif" alt="SQL Server" width="16"
+                        height="16"> SQL Server</span>
+                    <span class="tech-tag"><img src="assets/icons/dotnet.svg" alt="EF Core" width="16" height="16"> EF
+                      Core</span>
+                  </div>
+                  <div class="project-card__actions">
+                    <a href="https://github.com/Carlos96-07/Angular" target="_blank" rel="noopener noreferrer"
+                      class="btn-card-link">Ver Código</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card project-card--mockup">
+                <div class="project-card__image-box">
+                  <img src="assets/images/project-frontend-3.webp" alt="Mockup de Sistema Web .NET Core"
+                    class="project-card__img" width="900" height="560" loading="lazy">
+                </div>
+                <div class="project-card__body">
+                  <span class="project-card__category">PLATAFORMA WEB</span>
+                  <h3 class="project-card__title">Sistema Web .NET Core</h3>
+                  <p class="project-card__description">
+                    Sistema robusto construido con Razor Pages y Entity Framework Core. Incluye autenticación y
+                    validaciones complejas.
+                  </p>
+                  <div class="project-card__techs">
+                    <span class="tech-tag"><img src="assets/icons/dotnet.svg" alt=".NET" width="16" height="16"> Razor
+                      Pages</span>
+                    <span class="tech-tag"><img src="assets/icons/dotnet.svg" alt="EF Core" width="16" height="16"> EF
+                      Core</span>
+                    <span class="tech-tag"><img src="assets/icons/bootstrap.svg" alt="Bootstrap" width="16" height="16">
+                      Bootstrap</span>
+                  </div>
+                  <div class="project-card__actions">
+                    <a href="https://github.com/Carlos96-07/Consumo-de-APIs-y-CRUD" target="_blank"
+                      rel="noopener noreferrer" class="btn-card-link">Ver Código</a>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Categoría 2: Inteligencia Artificial -->
+          <div class="projects__panel" id="panel-ia" data-category="ia" role="tabpanel" aria-labelledby="tab-ia">
+            <div class="projects__grid projects__grid--2col">
+
+              <article class="project-card project-card--card">
+                <div class="project-card__icon-header">
+                  <img src="assets/icons/brain.svg" alt="Ícono de IA" width="40" height="40" class="project-card__icon">
+                  <span class="badge badge--status">Completado</span>
+                </div>
+                <div class="project-card__body">
+                  <h3 class="project-card__title">Asistente Inteligente IA (Agro-IA)</h3>
+                  <p class="project-card__description">
+                    Asistente virtual desarrollado en Python 3.10+, Streamlit y Jupyter Notebooks. Enfocado en la
+                    interacción natural y procesamiento predictivo de datos.
+                  </p>
+                  <div class="project-card__techs">
+                    <span class="tech-tag"><img src="assets/icons/python.svg" alt="Python" width="16" height="16">
+                      Python 3.10</span>
+                    <span class="tech-tag"><img src="assets/icons/tensorflow.svg" alt="TensorFlow" width="16"
+                        height="16"> TensorFlow</span>
+                    <span class="tech-tag"><img src="assets/icons/python.svg" alt="Streamlit" width="16" height="16">
+                      Streamlit</span>
+                  </div>
+                  <div class="project-card__actions">
+                    <a href="https://github.com/Carlos96-07/Agro-IA" target="_blank" rel="noopener noreferrer"
+                      class="btn-card-link">Ver Código &rarr;</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card project-card--card">
+                <div class="project-card__icon-header">
+                  <img src="assets/icons/brain.svg" alt="Ícono de Alexa" width="40" height="40"
+                    class="project-card__icon">
+                  <span class="badge badge--status">Completado</span>
+                </div>
+                <div class="project-card__body">
+                  <h3 class="project-card__title">Asistente Inteligente Alexa</h3>
+                  <p class="project-card__description">
+                    Herramienta de automatización controlada por voz en Python. Ejecuta comandos del sistema, búsquedas
+                    web y gestión de tareas automatizadas.
+                  </p>
+                  <div class="project-card__techs">
+                    <span class="tech-tag"><img src="assets/icons/python.svg" alt="Python" width="16" height="16">
+                      Python</span>
+                    <span class="tech-tag"><img src="assets/icons/windows.svg" alt="Windows" width="16" height="16">
+                      Automation</span>
+                    <span class="tech-tag"><img src="assets/icons/python.svg" alt="Voice API" width="16" height="16">
+                      Voice Recognition</span>
+                  </div>
+                  <div class="project-card__actions">
+                    <a href="https://github.com/Carlos96-07/Prototipo-Alexa" target="_blank" rel="noopener noreferrer"
+                      class="btn-card-link">Ver Código &rarr;</a>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Categoría 3: Backend -->
+          <div class="projects__panel" id="panel-backend" data-category="backend" role="tabpanel"
+            aria-labelledby="tab-backend">
+            <div class="projects__grid projects__grid--2col">
+
+              <article class="project-card project-card--card">
+                <div class="project-card__icon-header">
+                  <img src="assets/icons/dotnet.svg" alt="Ícono de ASP.NET" width="40" height="40"
+                    class="project-card__icon">
+                  <span class="badge badge--status">Completado</span>
+                </div>
+                <div class="project-card__body">
+                  <h3 class="project-card__title">App ASP.NET Web Forms</h3>
+                  <p class="project-card__description">
+                    Aplicación legacy modernizada utilizando .NET Framework y ADO.NET para una gestión eficiente de
+                    bases de datos SQL Server.
+                  </p>
+                  <div class="project-card__techs">
+                    <span class="tech-tag"><img src="assets/icons/dotnet.svg" alt="ASP.NET" width="16" height="16">
+                      ASP.NET</span>
+                    <span class="tech-tag"><img src="assets/icons/sqlserver.svg" alt="ADO.NET" width="16" height="16">
+                      ADO.NET</span>
+                    <span class="tech-tag"><img src="assets/icons/sqlserver.svg" alt="SQL Server" width="16"
+                        height="16"> SQL Server</span>
+                  </div>
+                  <div class="project-card__actions">
+                    <a href="https://github.com/Carlos96-07/ASPX-CRUD-.NET" target="_blank" rel="noopener noreferrer"
+                      class="btn-card-link">Ver Código &rarr;</a>
+                  </div>
+                </div>
+              </article>
+
+              <article class="project-card project-card--card">
+                <div class="project-card__icon-header">
+                  <img src="assets/icons/postgresql.svg" alt="Ícono de PostgreSQL" width="40" height="40"
+                    class="project-card__icon">
+                  <span class="badge badge--status">Completado</span>
+                </div>
+                <div class="project-card__body">
+                  <h3 class="project-card__title">Microservicios API en Flask &amp; PostgreSQL</h3>
+                  <p class="project-card__description">
+                    Microservicios de alta disponibilidad desarrollados con Python Flask, ORM SQLAlchemy y PostgreSQL
+                    con arquitectura desacoplada.
+                  </p>
+                  <div class="project-card__techs">
+                    <span class="tech-tag"><img src="assets/icons/python.svg" alt="Python" width="16" height="16">
+                      Python Flask</span>
+                    <span class="tech-tag"><img src="assets/icons/postgresql.svg" alt="PostgreSQL" width="16"
+                        height="16"> PostgreSQL</span>
+                    <span class="tech-tag"><img src="assets/icons/docker.svg" alt="Docker" width="16" height="16">
+                      Docker</span>
+                  </div>
+                  <div class="project-card__actions">
+                    <a href="https://github.com/Carlos96-07" target="_blank" rel="noopener noreferrer"
+                      class="btn-card-link">Ver Código &rarr;</a>
+                  </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- ==================== CERTIFICACIONES (LOGOS PROCESADOS WEBP SIN FONDO) ==================== -->
+          <section class="certifications" id="certificaciones">
+            <div class="certifications__container container">
+              <span class="section-subtitle section-subtitle--dark">CERTIFICACIONES</span>
+
+              <div class="certifications__grid">
+
+                <div class="cert-card">
+                  <div class="cert-card__icon-box">
+                    <img src="assets/images/IBM.png" alt="Logo IBM" class="cert-card__logo" width="100" height="40"
+                      loading="lazy">
+                  </div>
+                  <h3 class="cert-card__name">AI Fundamentals with IBM</h3>
+                  <span class="cert-card__issuer">IBM &amp; Cisco</span>
+                </div>
+
+                <div class="cert-card">
+                  <div class="cert-card__icon-box">
+                    <img src="assets/icons/microsoft.svg" alt="Logo Microsoft" class="cert-card__logo" width="44"
+                      height="44" loading="lazy">
+                  </div>
+                  <h3 class="cert-card__name">Microsoft Automatización de IA</h3>
+                  <span class="cert-card__issuer">Microsoft</span>
+                </div>
+
+                <div class="cert-card">
+                  <div class="cert-card__icon-box">
+                    <img src="assets/images/IBM.png" alt="Logo IBM" class="cert-card__logo" width="100" height="40"
+                      loading="lazy">
+                  </div>
+                  <h3 class="cert-card__name">Machine Learning with Python</h3>
+                  <span class="cert-card__issuer">IBM</span>
+                </div>
+
+                <div class="cert-card">
+                  <div class="cert-card__icon-box">
+                    <img src="assets/images/amazonweb.png" alt="Logo AWS" class="cert-card__logo" width="80" height="45"
+                      loading="lazy">
+                  </div>
+                  <h3 class="cert-card__name">Foundations of Prompt Engineering</h3>
+                  <span class="cert-card__issuer">AWS</span>
+                </div>
+
+                <div class="cert-card">
+                  <div class="cert-card__icon-box">
+                    <img src="assets/images/cert-scrum.webp" alt="Logo SCRUM Study" class="cert-card__logo" width="44"
+                      height="44" loading="lazy">
+                  </div>
+                  <h3 class="cert-card__name">Scrum Fundamentals</h3>
+                  <span class="cert-card__issuer">SCRUM Study</span>
+                </div>
+
+                <div class="cert-card">
+                  <div class="cert-card__icon-box">
+                    <img src="assets/images/logo_tec.png" alt="Logo Tecnológico de Costa Rica" class="cert-card__logo"
+                      width="44" height="44" loading="lazy">
+                  </div>
+                  <h3 class="cert-card__name">Building Quality Software QA Architect</h3>
+                  <span class="cert-card__issuer">Tecnológico de Costa Rica</span>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- ==================== TECNOLOGÍAS (SIN DOCKER NI MYSQL - MARQUEE CONTINUO) ==================== -->
+          <section class="techs section">
+            <div class="container">
+              <span class="section-subtitle">TECNOLOGÍAS</span>
+            </div>
+
+            <!-- Banner Ticker de Anuncio Continuo Infinito -->
+            <div class="techs__ticker">
+              <div class="techs__ticker-track">
+
+                <!-- Bloque Original de Insignias Tecnológicas -->
+                <div class="tech-item" title="HTML5"><img src="assets/images/HTML5_logo.webp" alt="HTML5" width="56"
+                    height="56"></div>
+                <div class="tech-item" title="CSS3"><img src="assets/images/css-logo.webp" alt="CSS3" width="56"
+                    height="56"></div>
+                <div class="tech-item" title="JavaScript"><img src="assets/images/javascript.jpg" alt="JavaScript"
+                    width="56" height="56"></div>
+                <div class="tech-item" title="Angular"><img src="assets/images/Angular.jfif" alt="Angular" width="56"
+                    height="56"></div>
+                <div class="tech-item" title="Vue.js"><img src="assets/images/tech-vuejs.webp" alt="Vue.js" width="56"
+                    height="56"></div>
+                <div class="tech-item" title="Antigravity"><img src="assets/images/antigrativy.jfif" alt="Antigravity"
+                    width="56" height="56"></div>
+                <div class="tech-item" title=".NET Core"><img src="assets/images/Net Core.png" alt=".NET" width="56"
+                    height="56"></div>
+                <div class="tech-item" title="Python"><img src="assets/images/tech-python.webp" alt="Python" width="56"
+                    height="56"></div>
+                <div class="tech-item" title="SQL Server"><img src="assets/images/tech-sqlserver.webp" alt="SQL Server"
+                    width="56" height="56"></div>
+                <div class="tech-item" title="PostgreSQL"><img src="assets/images/Postgresql_elephant.webp"
+                    alt="PostgreSQL" width="56" height="56"></div>
+                <div class="tech-item" title="Visual Studio"><img src="assets/images/tech-visualstudio.webp"
+                    alt="Visual Studio" width="56" height="56"></div>
+                <div class="tech-item" title="Git"><img src="assets/images/git.jfif" alt="Git" width="56" height="56">
+                </div>
+                <div class="tech-item" title="Windows"><img src="assets/icons/windows.svg" alt="Windows" width="56"
+                    height="56"></div>
+                <div class="tech-item" title="TensorFlow"><img src="assets/images/tensor.png" alt="TensorFlow"
+                    width="56" height="56"></div>
+                <div class="tech-item" title="VS Code"><img src="assets/images/tech-vscode.webp" alt="VS Code"
+                    width="56" height="56"></div>
+
+                <!-- Bloque Duplicado para Scroll Infinito Fluido -->
+                <div class="tech-item" title="HTML5"><img src="assets/images/HTML5_logo.webp" alt="HTML5" width="56"
+                    height="56"></div>
+                <div class="tech-item" title="CSS3"><img src="assets/images/css-logo.webp" alt="CSS3" width="56"
+                    height="56"></div>
+                <div class="tech-item" title="JavaScript"><img src="assets/images/javascript.jpg" alt="JavaScript"
+                    width="56" height="56"></div>
+                <div class="tech-item" title="Angular"><img src="assets/images/Angular.jfif" alt="Angular" width="56"
+                    height="56"></div>
+                <div class="tech-item" title="Vue.js"><img src="assets/images/tech-vuejs.webp" alt="Vue.js" width="56"
+                    height="56"></div>
+                <div class="tech-item" title="Antigravity"><img src="assets/images/antigrativy.jfif" alt="Antigravity"
+                    width="56" height="56"></div>
+                <div class="tech-item" title=".NET Core"><img src="assets/images/Net Core.png" alt=".NET" width="56"
+                    height="56"></div>
+                <div class="tech-item" title="Python"><img src="assets/images/tech-python.webp" alt="Python" width="56"
+                    height="56"></div>
+                <div class="tech-item" title="PHP"><img src="assets/icons/php.svg" alt="PHP" width="56" height="56">
+                </div>
+                <div class="tech-item" title="SQL Server"><img src="assets/images/tech-sqlserver.webp" alt="SQL Server"
+                    width="56" height="56"></div>
+                <div class="tech-item" title="PostgreSQL"><img src="assets/images/postgresql.jfif" alt="PostgreSQL"
+                    width="56" height="56"></div>
+                <div class="tech-item" title="Visual Studio"><img src="assets/images/tech-visualstudio.webp"
+                    alt="Visual Studio" width="56" height="56"></div>
+                <div class="tech-item" title="Git"><img src="assets/images/git.jfif" alt="Git" width="56"
+                    height="56"></div>
+                <div class="tech-item" title="Windows"><img src="assets/icons/windows.svg" alt="Windows" width="56"
+                    height="56"></div>
+                <div class="tech-item" title="TensorFlow"><img src="assets/images/tech-tensorflow.webp" alt="TensorFlow"
+                    width="56" height="56"></div>
+                <div class="tech-item" title="VS Code"><img src="assets/images/tech-vscode.webp" alt="VS Code"
+                    width="56" height="56"></div>
+
+              </div>
+            </div>
+          </section>
+
+          <hr>
+
+          <!-- ==================== CONTACTO ==================== -->
+          <section class="contact section" id="contacto">
+            <div class="contact__container container">
+              <div class="contact__grid">
+
+                <div class="contact__info">
+                  <span class="section-subtitle">CONTACTO</span>
+                  <p class="contact__text">
+                    ¿Tienes un proyecto en mente o quieres colaborar? Envíame un mensaje y te responderé a la brevedad.
+                  </p>
+                </div>
+
+                <form class="contact__form" id="contact-form" novalidate>
+                  <div class="contact__honeypot" aria-hidden="true">
+                    <label for="website_hp">Si eres humano deja este campo vacío:</label>
+                    <input type="text" id="website_hp" name="website_hp" tabindex="-1" autocomplete="off">
+                  </div>
+
+                  <div class="contact__group">
+                    <div class="contact__field">
+                      <label for="user_name" class="contact__label">Nombre</label>
+                      <input type="text" id="user_name" name="user_name" class="contact__input" required
+                        placeholder="Tu nombre">
+                      <span class="contact__error" id="error-user_name"></span>
+                    </div>
+
+                    <div class="contact__field">
+                      <label for="user_email" class="contact__label">Correo electrónico</label>
+                      <input type="email" id="user_email" name="user_email" class="contact__input" required
+                        placeholder="tu@correo.com">
+                      <span class="contact__error" id="error-user_email"></span>
+                    </div>
+                  </div>
+
+                  <div class="contact__field">
+                    <label for="user_subject" class="contact__label">Asunto</label>
+                    <input type="text" id="user_subject" name="user_subject" class="contact__input" required
+                      placeholder="Asunto de la consulta">
+                    <span class="contact__error" id="error-user_subject"></span>
+                  </div>
+
+                  <div class="contact__field">
+                    <label for="user_message" class="contact__label">Mensaje</label>
+                    <textarea id="user_message" name="user_message" class="contact__input contact__textarea" rows="5"
+                      required placeholder="Escribe tu mensaje aquí..."></textarea>
+                    <span class="contact__error" id="error-user_message"></span>
+                  </div>
+
+                  <div class="contact__status" id="form-status" aria-live="polite"></div>
+
+                  <button type="submit" class="btn btn--solid" id="submit-btn">
+                    <span>Enviar mensaje</span>
+                  </button>
+                </form>
+
+              </div>
+            </div>
+          </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__grid">
+
+        <div class="footer__col">
+          <h3 class="footer__title">NAVEGACIÓN</h3>
+          <ul class="footer__links">
+            <li><a href="#inicio" class="footer__link">Inicio</a></li>
+            <li><a href="#sobre-mi" class="footer__link">Sobre mí</a></li>
+            <li><a href="#proyectos" class="footer__link">Proyectos</a></li>
+            <li><a href="#certificaciones" class="footer__link">Certificaciones</a></li>
+            <li><a href="#contacto" class="footer__link">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">SÍGUEME</h3>
+          <div class="footer__socials">
+            <a href="https://github.com/Carlos96-07" target="_blank" rel="noopener noreferrer"
+              class="footer__social-icon" aria-label="GitHub">
+              <img src="assets/icons/github.svg" alt="GitHub" width="24" height="24">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer__social-icon"
+              aria-label="LinkedIn">
+              <img src="assets/icons/linkedin.svg" alt="LinkedIn" width="24" height="24">
+            </a>
+            <a href="mailto:carlos@ejemplo.com" class="footer__social-icon" aria-label="Correo electrónico">
+              <img src="assets/icons/email.svg" alt="Email" width="24" height="24">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__title">Perfil Profesional</h3>
+          <p class="footer__info" style="color: white;">
+            Desarrollador Web Agéntico IA
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; <span id="copyright-year"></span> Carlos Leandro. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

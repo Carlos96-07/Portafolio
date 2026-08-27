@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="56" height="56">
+  <rect width="100" height="100" rx="18" fill="#306998"/>
+  <path fill="#FFD43B" d="M50 18c-12 0-11 5-11 5v7h11v2H33s-7 0-7 11 5 11 5 11h3v-6c0-7 6-7 6-7h10s6 0 6-6V23s0-5-13-5zm-3 4a2 2 0 100 4 2 2 0 000-4z"/>
+  <path fill="#FFD43B" d="M50 64c12 0 11-5 11-5v-7H50v-2h17s7 0 7-11-5-11-5-11h-3v6c0 7-6 7-6 7H50s-6 0-6 6v10s0 5 12 5zm3-4a2 2 0 100-4 2 2 0 000 4z"/>
+  <text x="50" y="90" font-family="sans-serif" font-size="10" font-weight="900" fill="#FFF" text-anchor="middle">Python</text>
+</svg>

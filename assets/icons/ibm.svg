@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120" width="120" height="48">
+  <g fill="#FFFFFF">
+    <!-- I -->
+    <rect x="10" y="10" width="30" height="8"/>
+    <rect x="10" y="24" width="30" height="8"/>
+    <rect x="10" y="38" width="30" height="8"/>
+    <rect x="10" y="52" width="30" height="8"/>
+    <rect x="10" y="66" width="30" height="8"/>
+    <rect x="10" y="80" width="30" height="8"/>
+    <rect x="10" y="94" width="30" height="8"/>
+    <rect x="10" y="108" width="30" height="8"/>
+    
+    <!-- B -->
+    <path d="M55,10 h45 v8 h-45 z M55,24 h45 v8 h-45 z M55,38 h35 v8 h-35 z M55,52 h50 v8 h-50 z M55,66 h50 v8 h-50 z M55,80 h35 v8 h-35 z M55,94 h45 v8 h-45 z M55,108 h45 v8 h-45 z"/>
+    <rect x="80" y="24" width="10" height="22" fill="#0A0A0A"/>
+    <rect x="85" y="66" width="10" height="36" fill="#0A0A0A"/>
+
+    <!-- M -->
+    <path d="M115,10 h20 v8 h-20 z M115,24 h20 v8 h-20 z M115,38 h20 v8 h-20 z M115,52 h20 v8 h-20 z M115,66 h20 v8 h-20 z M115,80 h20 v8 h-20 z M115,94 h20 v8 h-20 z M115,108 h20 v8 h-20 z"/>
+    <path d="M175,10 h20 v8 h-20 z M175,24 h20 v8 h-20 z M175,38 h20 v8 h-20 z M175,52 h20 v8 h-20 z M175,66 h20 v8 h-20 z M175,80 h20 v8 h-20 z M175,94 h20 v8 h-20 z M175,108 h20 v8 h-20 z"/>
+    <polygon points="135,10 155,60 175,10 175,22 155,70 135,22"/>
+    <polygon points="135,66 155,116 175,66 175,78 155,120 135,78"/>
+  </g>
+</svg>

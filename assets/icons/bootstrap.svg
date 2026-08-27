@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="56" height="56">
+  <rect width="100" height="100" rx="18" fill="#7952B3"/>
+  <path fill="#FFF" d="M32 24h18c7 0 12 3 12 8 0 4-2 7-6 8 5 1 8 5 8 10 0 7-5 10-13 10H32V24zm11 12h6c3 0 5-1 5-3s-2-3-5-3h-6v6zm0 18h7c3 0 5-1 5-4s-2-4-5-4h-7v8z"/>
+  <text x="50" y="90" font-family="sans-serif" font-size="10" font-weight="900" fill="#FFF" text-anchor="middle">Bootstrap</text>
+</svg>
